@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useAuth } from '@/lib/auth-context';
 import { analyticsAPI } from '@/lib/api';
+import { NotificationBell } from '@/components/NotificationBell';
 import Link from 'next/link';
 
 interface Analytics {
@@ -49,6 +50,7 @@ export default function Dashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-gray-900">Procurement Intelligence</h1>
           <div className="flex items-center gap-4">
+            <NotificationBell />
             <span className="text-gray-700">Welcome, {user?.full_name || 'User'}</span>
             <button
               onClick={handleLogout}
@@ -63,36 +65,42 @@ export default function Dashboard() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Navigation Tabs */}
-        <div className="flex gap-4 mb-8 border-b border-gray-200">
+        <div className="flex gap-4 mb-8 border-b border-gray-200 overflow-x-auto">
           <Link
             href="/dashboard"
-            className="px-4 py-2 border-b-2 border-indigo-600 font-medium text-indigo-600"
+            className="px-4 py-2 border-b-2 border-indigo-600 font-medium text-indigo-600 whitespace-nowrap"
           >
             Overview
           </Link>
           <Link
             href="/dashboard/vendors"
-            className="px-4 py-2 border-b-2 border-transparent font-medium text-gray-600 hover:text-gray-900"
+            className="px-4 py-2 border-b-2 border-transparent font-medium text-gray-600 hover:text-gray-900 whitespace-nowrap"
           >
             Vendors
           </Link>
           <Link
             href="/dashboard/orders"
-            className="px-4 py-2 border-b-2 border-transparent font-medium text-gray-600 hover:text-gray-900"
+            className="px-4 py-2 border-b-2 border-transparent font-medium text-gray-600 hover:text-gray-900 whitespace-nowrap"
           >
             Orders
           </Link>
           <Link
             href="/dashboard/quotes"
-            className="px-4 py-2 border-b-2 border-transparent font-medium text-gray-600 hover:text-gray-900"
+            className="px-4 py-2 border-b-2 border-transparent font-medium text-gray-600 hover:text-gray-900 whitespace-nowrap"
           >
             Quotes
           </Link>
           <Link
             href="/dashboard/analytics"
-            className="px-4 py-2 border-b-2 border-transparent font-medium text-gray-600 hover:text-gray-900"
+            className="px-4 py-2 border-b-2 border-transparent font-medium text-gray-600 hover:text-gray-900 whitespace-nowrap"
           >
             Analytics
+          </Link>
+          <Link
+            href="/dashboard/notifications"
+            className="px-4 py-2 border-b-2 border-transparent font-medium text-gray-600 hover:text-gray-900 whitespace-nowrap"
+          >
+            Notifications
           </Link>
         </div>
 
