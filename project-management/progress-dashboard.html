@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurement Intelligence - Progress Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <div class="px-4 py-6 sm:px-0">
+            <h1 class="text-3xl font-bold text-gray-900 mb-2">Procurement Intelligence Platform</h1>
+            <h2 class="text-xl text-gray-600 mb-8">Project Progress Dashboard</h2>
+
+            <!-- Overall Progress -->
+            <div class="bg-white shadow rounded-lg mb-8">
+                <div class="px-4 py-5 sm:p-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Overall Progress</h3>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm text-gray-600 mb-1">
+                            <span>Project Completion</span>
+                            <span>28.57%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 28.57%"></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-2xl font-bold text-blue-600">2</div>
+                            <div class="text-sm text-gray-600">Completed Phases</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-green-600">7</div>
+                            <div class="text-sm text-gray-600">Total Phases</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-purple-600">In_Progress</div>
+                            <div class="text-sm text-gray-600">Status</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase Progress -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+
+                <div class="bg-white shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-medium text-gray-900">Infrastructure Foundation</h3>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                Completed
+                            </span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                <span>Progress</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600">
+                            Tasks: 4/4 completed
+                        </div>
+                        <div class="text-sm text-gray-500 mt-2">Started: 2026-03-01</div>
+                        <div class="text-sm text-gray-500">Completed: 2026-03-05</div>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-medium text-gray-900">Core Backend API</h3>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                Completed
+                            </span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                <span>Progress</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600">
+                            Tasks: 8/8 completed
+                        </div>
+                        <div class="text-sm text-gray-500 mt-2">Started: 2026-03-05</div>
+                        <div class="text-sm text-gray-500">Completed: 2026-03-05T19:20:32.898241</div>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-medium text-gray-900">Frontend Dashboard</h3>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                                In Progress
+                            </span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                <span>Progress</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600">
+                            Tasks: 0/7 completed
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="bg-white shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-medium text-gray-900">Worker Implementation</h3>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                Pending
+                            </span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                <span>Progress</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gray-600 h-2 rounded-full" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600">
+                            Tasks: 0/6 completed
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="bg-white shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-medium text-gray-900">AI Engines Development</h3>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                Pending
+                            </span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                <span>Progress</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gray-600 h-2 rounded-full" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600">
+                            Tasks: 0/5 completed
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="bg-white shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-medium text-gray-900">Integration & Testing</h3>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                Pending
+                            </span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                <span>Progress</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gray-600 h-2 rounded-full" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600">
+                            Tasks: 0/4 completed
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="bg-white shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-medium text-gray-900">Deployment & Production</h3>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                Pending
+                            </span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                <span>Progress</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gray-600 h-2 rounded-full" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600">
+                            Tasks: 0/4 completed
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Upcoming Tasks -->
+            <div class="bg-white shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Upcoming Tasks</h3>
+                    <div class="space-y-3">
+
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                            <div>
+                                <div class="text-sm font-medium text-gray-900">Authentication UI</div>
+                                <div class="text-sm text-gray-500">Frontend Dashboard</div>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                Pending
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                            <div>
+                                <div class="text-sm font-medium text-gray-900">Main Dashboard</div>
+                                <div class="text-sm text-gray-500">Frontend Dashboard</div>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                Pending
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                            <div>
+                                <div class="text-sm font-medium text-gray-900">Vendor Management Interface</div>
+                                <div class="text-sm text-gray-500">Frontend Dashboard</div>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                Pending
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                            <div>
+                                <div class="text-sm font-medium text-gray-900">Order Creation Interface</div>
+                                <div class="text-sm text-gray-500">Frontend Dashboard</div>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                Pending
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                            <div>
+                                <div class="text-sm font-medium text-gray-900">Quote Comparison Interface</div>
+                                <div class="text-sm text-gray-500">Frontend Dashboard</div>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                Pending
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                            <div>
+                                <div class="text-sm font-medium text-gray-900">Analytics Dashboard</div>
+                                <div class="text-sm text-gray-500">Frontend Dashboard</div>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                Pending
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                            <div>
+                                <div class="text-sm font-medium text-gray-900">Responsive Design Implementation</div>
+                                <div class="text-sm text-gray-500">Frontend Dashboard</div>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                Pending
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                            <div>
+                                <div class="text-sm font-medium text-gray-900">Celery Worker Setup</div>
+                                <div class="text-sm text-gray-500">Worker Implementation</div>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                Pending
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                            <div>
+                                <div class="text-sm font-medium text-gray-900">Vendor Discovery Worker</div>
+                                <div class="text-sm text-gray-500">Worker Implementation</div>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                Pending
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                            <div>
+                                <div class="text-sm font-medium text-gray-900">Price Monitoring Worker</div>
+                                <div class="text-sm text-gray-500">Worker Implementation</div>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                Pending
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="mt-8 text-center text-sm text-gray-500">
+                Last updated: 2026-03-05T19:20:43.229117
+            </div>
+        </div>
+    </div>
+</body>
+</html>
