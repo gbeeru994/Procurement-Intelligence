@@ -88,6 +88,12 @@ export default function Dashboard() {
           >
             Quotes
           </Link>
+          <Link
+            href="/dashboard/analytics"
+            className="px-4 py-2 border-b-2 border-transparent font-medium text-gray-600 hover:text-gray-900"
+          >
+            Analytics
+          </Link>
         </div>
 
         {error && (
